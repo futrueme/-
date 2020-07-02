@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0" charset="utf-8"/>
+<title>love heart</title>
+<style type="text/css">
+body {
+background-color: #E3E2E3;
+transform-style: preserve-3d;
+perspective: 500;
+animation-name: color;
+animation-duration: 60s;
+animation-delay: 14s;
+}
+@keyframes color {
+0% {
+background-color: #E0C4E0;
+}
+5% {
+background-color: black;
+}
+10% {
+background-color: black;
+}
+15% {
+background-color: black;
+}
+20% {
+background-color: black;
+}
+25% {
+background-color: black;
+}
+30% {
+background-color: black;
+}
+35% {
+background-color: black;
+}
+40% {
+background-color: black;
+}
+45% {
+background-color: black;
+}
+50% {
+background-color: black;
+}
+55% {
+background-color: black;
+}
+60% {
+background-color: black;
+}
+65% {
+background-color: black;
+}
+70% {
+background-color: black;
+}
+75% {
+background-color: black;
+}
+80% {
+background-color: black;
+}
+85% {
+background-color: black;
+}
+90% {
+background-color: black;
+}
+95% {
+background-color: black;
+}
+100% {
+background-color: black;
+}
+}
+.box {
+width: 340px;
+height: 340px;
+position: relative;
+top: 50px;
+left: 0;
+background-color: ;
+animation-name: rotate;
+animation-duration: 5s;
+animation-delay: 14s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes rotate {
+0% {
+transform: rotateY(0deg);
+}
+33.333333333333333333333% {
+transform: rotateY(45deg);
+}
+33.333333333333333333333% {
+transform: rotateY(0deg);
+}
+33.333333333333333333333% {
+transform: rotateY(-45deg);
+}
+}
+/********中间文字**********/
+.love {
+width: 90px;
+height: 90px;
+line-height: 90px;
+text-align: center;
+font-size: 43px;
+color: lime;
+/*filter: blur(2px);*/
+position: absolute;
+top: 40px;
+left: 71px;
+opacity: 0;
+transition-delay: 14s;
+animation-name: love;
+animation-duration: 2.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-delay: 14.1s;
+}
+@keyframes love {
+from {
+color: cyan;
+filter: blur(2px);
+text-shadow: 0 0 10px lime,
+0 0 20px lime,
+0 0 30px lime,
+0 0 40px lime,
+0 0 90px lime,
+0 0 190px lime;
+}
+to {
+color: white;
+filter: blur(0px);
+text-shadow: none;
+}
+}
+.box:hover .love {
+opacity: 1;
+}
+.you {
+width: 90px;
+height: 90px;
+line-height: 90px;
+text-align: center;
+font-size: 43px;
+position: absolute;
+top: 40px;
+left: 182px;
+color: fuchsia;
+opacity: 0;
+transition-delay: 14.5s;
+animation-name: you;
+animation-duration: 2.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-delay: 14.6s;
+}
+.box:hover .you {
+opacity: 1;
+}
+@keyframes you {
+from {
+color: cyan;
+filter: blur(2px);
+text-shadow: 0 0 10px fuchsia,
+0 0 20px fuchsia,
+0 0 30px fuchsia,
+0 0 40px fuchsia,
+0 0 90px fuchsia,
+0 0 190px fuchsia;
+}
+to {
+color: white;
+filter: blur(0px);
+text-shadow: none;
+}
+}
+
+/**********遮罩层**********/
+.mark,.movestarmark {
+width: 12px;
+height: 12px;
+background-color: #E3E2E3;
+position: absolute;
+top: 164px;
+left: 164px;
+z-index: 37;
+transform: scale(2);
+animation-name: color;
+animation-duration: 60s;
+animation-delay: 14s;
+}
+.disc1,.disc2,.disc3,.disc4,.disc5,.disc6,.disc7,.disc8,.disc9,.disc10,.disc11,.disc12,.disc13,.disc14,.disc15,.disc16,.disc17,.disc18,.disc19,.disc20,.disc21,.disc22,.disc23,.disc25,.disc26,.disc27,.disc28,.disc29,.disc30,.disc31,.disc32,.disc33,.disc34,.disc35 {
+width: 12px;
+height: 12px;
+position: absolute;
+top: 164px;
+left: 164px;
+border-radius: 50%;
+animation-name: disc;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes disc {
+0% {
+background-color: #D548FF;
+}
+25% {
+background-color: orange;
+}
+50% {
+background-color: lime;
+}
+75% {
+background-color: cyan;
+transform: scale(2);
+}
+100% {
+background-color: #D548FF;
+}
+}
+.disc1 {
+animation-delay: 7s;
+}
+.disc2 {
+transition-delay: 0.2s;
+animation-delay: 7.2s;
+}
+.disc3 {
+transition-delay: 0.4s;
+animation-delay: 7.4s;
+}
+.disc4 {
+transition-delay: 0.6s;
+animation-delay: 7.6s;
+}
+.disc5 {
+transition-delay: 0.8s;
+animation-delay: 7.8s;
+}
+.disc6 {
+transition-delay: 1s;
+animation-delay: 8s;
+}
+.disc7 {
+transition-delay: 1.2s;
+animation-delay: 8.2s;
+}
+.disc8 {
+transition-delay: 1.4s;
+animation-delay: 8.4s;
+}
+.disc9 {
+transition-delay: 1.6s;
+animation-delay: 8.6s;
+}
+.disc10 {
+transition-delay: 1.8s;
+animation-delay: 8.8s;
+}
+.disc11 {
+transition-delay: 2s;
+animation-delay: 9s;
+}
+.disc12 {
+transition-delay: 2.2s;
+animation-delay: 9.2s;
+}
+.disc13 {
+transition-delay: 2.4s;
+animation-delay: 9.4s;
+}
+.disc14 {
+transition-delay: 2.6s;
+animation-delay: 9.6s;
+}
+.disc15 {
+transition-delay: 2.8s;
+animation-delay: 9.8s;
+}
+.disc16 {
+transition-delay: 3s;
+animation-delay: 10s;
+}
+.disc17 {
+transition-delay: 3.2s;
+animation-delay: 10.2s;
+}
+.disc35 {
+transition-delay: 3.4s;
+animation-delay: 10.4s;
+}
+.disc34 {
+transition-delay: 3.6s;
+animation-delay: 10.6s;
+}
+.disc33 {
+transition-delay: 3.8s;
+animation-delay: 10.8s;
+}
+.disc32 {
+transition-delay: 4s;
+animation-delay: 11s;
+}
+.disc31 {
+transition-delay: 4.2s;
+animation-delay: 11.2s;
+}
+.disc30 {
+transition-delay: 4.4s;
+animation-delay: 11.4s;
+}
+.disc29 {
+transition-delay: 4.6s;
+animation-delay: 11.6s;
+}
+.disc28 {
+transition-delay: 4.8s;
+animation-delay: 11.8s;
+}
+.disc27 {
+transition-delay: 5s;
+animation-delay: 12s;
+}
+.disc26 {
+transition-delay: 5.2s;
+animation-delay: 12.2s;
+}
+.disc25 {
+transition-delay: 5.4s;
+animation-delay: 12.4s;
+}
+.disc24 {
+transition-delay: 5.6s;
+animation-delay: 12.6s;
+}
+.disc23 {
+transition-delay: 5.8s;
+animation-delay: 12.8s;
+}
+.disc22 {
+transition-delay: 6s;
+animation-delay: 13s;
+}
+.disc21 {
+transition-delay: 6.2s;
+animation-delay: 13.2s;
+}
+.disc20 {
+transition-delay: 6.4s;
+animation-delay: 13.4s;
+}
+.disc19 {
+transition-delay: 6.6s;
+animation-delay: 13.6s;
+}
+.disc18 {
+transition-delay: 6.8s;
+animation-delay: 13.8s;
+}
+/*****************/
+.box:hover .disc1 {
+top: 50px;
+left: 164px;
+background-color: #D548FF;
+}
+.box:hover .disc2 {
+top: 30px;
+left: 143px;
+background-color: #D548FF;
+}
+.box:hover .disc3 {
+top: 18px;
+left: 118px;
+background-color: #D548FF;
+}
+.box:hover .disc4 {
+top: 13px;
+left: 94px;
+background-color: #D548FF;
+}
+.box:hover .disc5 { 
+top: 18px;
+left: 73px;
+background-color: #D548FF;
+}
+.box:hover .disc6 {
+top: 31px;
+left: 56px;
+background-color: #D548FF;
+}
+.box:hover .disc7 {
+top: 47px;
+left: 44px;
+background-color: #D548FF;
+}
+.box:hover .disc8 {
+top: 67px;
+left: 38px;
+background-color: #D548FF;
+}
+.box:hover .disc9 {
+top: 87px;
+left: 40px;
+background-color: #D548FF;
+}
+.box:hover .disc10 {
+top: 104px;
+left: 46px;
+background-color: #D548FF;
+}
+.box:hover .disc11 {
+top: 120px;
+left: 56px;
+background-color: #D548FF;
+}
+.box:hover .disc12 {
+top: 135px;
+left: 69px;
+background-color: #D548FF;
+}
+.box:hover .disc13 {
+top: 147px;
+left: 83px;
+background-color: #D548FF;
+}
+.box:hover .disc14 {
+top: 159px;
+left: 101px;
+background-color: #D548FF;
+}
+.box:hover .disc15 {
+top: 172px;
+left: 119px;
+background-color: #D548FF;
+}
+.box:hover .disc16 {
+top: 187px;
+left: 134px;
+background-color: #D548FF;
+}
+.box:hover .disc17 {
+top: 205px;
+left: 148px;
+background-color: #D548FF;
+}
+.box:hover .disc18 {
+top: 30px;
+left: 185px;
+background-color: #D548FF;
+}
+.box:hover .disc19 {
+top: 18px;
+left: 210px;
+background-color: #D548FF;
+}
+.box:hover .disc20 {
+top: 13px;
+left: 234px;
+background-color: #D548FF;
+}
+.box:hover .disc21 {
+top: 18px;
+left: 256px;
+background-color: #D548FF;
+}
+.box:hover .disc22 {
+top: 31px;
+left: 273px;
+background-color: #D548FF;
+}
+.box:hover .disc23 {
+top: 47px;
+left: 285px;
+background-color: #D548FF;
+}
+.box:hover .disc25 {
+top: 67px;
+left: 291px;
+background-color: #D548FF;
+}
+.box:hover .disc26 {
+top: 87px;
+left: 289px;
+background-color: #D548FF;
+}
+.box:hover .disc27 {
+top: 104px;
+left: 283px;
+background-color: #D548FF;
+}
+.box:hover .disc28 {
+top: 120px;
+left: 273px;
+background-color: #D548FF;
+}
+.box:hover .disc29 {
+top: 135px;
+left: 260px;
+background-color: #D548FF;
+}
+.box:hover .disc30 {
+top: 147px;
+left: 246px;
+background-color: #D548FF;
+}
+.box:hover .disc31 {
+top: 159px;
+left: 228px;
+background-color: #D548FF;
+}
+.box:hover .disc32 {
+top: 172px;
+left: 210px;
+background-color: #D548FF;
+}
+.box:hover .disc33 {
+top: 187px;
+left: 195px;
+background-color: #D548FF;
+}
+.box:hover .disc34 {
+top: 205px;
+left: 181px;
+background-color: #D548FF;
+}
+.box:hover .disc35 {
+top: 226px;
+left: 165px;
+background-color: #D548FF;
+}
+
+/*********爱心飘落区域**********/
+.movelovesquare {
+width: 10px;
+height: 10px;
+background-color: #FC0075;
+transform: rotateZ(45deg);
+position: absolute;
+top: 0px;
+left: 0px;
+}
+.moveloveleft {
+width: 10px;
+height: 10px;
+background-color: #FC0075;
+border-radius: 50%;
+position: absolute;
+top: -4px;
+left: -4px;
+}
+.moveloveright {
+width: 10px;
+height: 10px;
+background-color: #FC0075;
+border-radius: 50%;
+position: absolute;
+top: -4px;
+left: 4px;  
+}
+.littlebox,.littlebox1,.littlebox2,.littlebox3,.littlebox4,.littlebox5,.littlebox6,.littlebox7,.littlebox8,.littlebox9,.littlebox10 {
+width: 10px;
+height: 10px;
+position: relative;
+background-color: rgba(0,0,0,0);
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.littlebox { 
+top: -340px;
+left: 0;
+animation-name: movelove;
+animation-duration: 10s;
+}
+@keyframes movelove {
+/*220px*/
+0% {
+top: -340px;
+left: 0;
+}
+25% {
+top: -200px;
+left: 100px;
+transform: rotateY(55deg);
+}
+50% {
+top: -60px;
+left: 0;
+transform: rotateY(0deg);
+}
+75% {
+top: 80px;
+left: 100px;
+transform: rotateY(55deg);
+}
+100% {
+top: 220px;
+left: 0;
+transform: rotateY(0deg);
+}
+}
+.littlebox1 {
+top: -340px;
+left: 100px;
+animation-name: movelove1;
+animation-duration: 10s;
+}
+@keyframes movelove1 {
+0% {
+top: -340px;
+left: 100px;
+}
+25% {
+top: -200px;
+left: 80px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -60px;
+left: 120px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 80px;
+left: 50px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 0;
+transform: rotateZ(360deg);
+}
+}
+.littlebox2 {
+top: -380px;
+left: 50px;
+animation-name: movelove2;
+animation-duration: 10s;
+animation-delay: 0.5s;
+}
+@keyframes movelove2 {
+0% {
+top: -380px;
+left: 50px;
+}
+25% {
+top: -240px;
+left: 100px;
+transform: rotateY(90deg);
+}
+50% {
+top: -130px;
+left: 140px;
+transform: rotateY(180deg);
+}
+75% {
+top: 20px;
+left: 70px;
+transform: rotateY(270deg);
+}
+100% {
+top: 220px;
+left: 100px;
+transform: rotateY(360deg);
+}
+}
+.littlebox3 { 
+top: -340px;
+left: 0;
+animation-name: movelove3;
+animation-duration: 10.5s;
+}
+@keyframes movelove3 {
+0% {
+top: -340px;
+left: 0;
+}
+25% {
+top: -220px;
+left: 100px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -100px;
+left: 189px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 10px;
+left: 200px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 200px;
+transform: rotateZ(360deg);
+}
+}
+.littlebox4 { 
+top: -370px;
+left: 230px;
+animation-name: movelove4;
+animation-duration: 9.5s;
+}
+@keyframes movelove4 {
+0% {
+top: -370px;
+left: 230px;
+}
+25% {
+top: -270px;
+left: 240px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -100px;
+left: 189px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 10px;
+left: 200px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 200px;
+transform: rotateZ(360deg);
+}
+}
+.littlebox5 { 
+top: -370px;
+left: 180px;
+animation-name: movelove5;
+animation-duration: 12s;
+}
+@keyframes movelove5 {
+0% {
+top: -370px;
+left: 180px;
+}
+25% {
+top: -250px;
+left: 190px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -97px;
+left: 74px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 180px;
+left: 124px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 178px;
+transform: rotateZ(360deg);
+}
+}
+.littlebox6 { 
+top: -390px;
+left: 300px;
+animation-name: movelove6;
+animation-duration: 12s;
+}
+@keyframes movelove6 {
+0% {
+top: -390px;
+left: 300px;
+}
+25% {
+top: -238px;
+left: 283px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -131px;
+left: 251px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 21px;
+left: 193px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 240px;
+transform: rotateZ(360deg);
+}
+}
+.littlebox7 { 
+top: -460px;
+left: 204px;
+animation-name: movelove7;
+animation-duration: 12s;
+}
+@keyframes movelove7 {
+0% {
+top: -460px;
+left: 204px;
+}
+25% {
+top: -290px;
+left: 210px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -120px;
+left: 236px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 90px;
+left: 196px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 228px;
+transform: rotateZ(360deg);
+}
+}
+.littlebox8 { 
+top: -450px;
+left: 165px;
+animation-name: movelove8;
+animation-duration: 12s;
+animation-delay: 1s;
+}
+@keyframes movelove8 {
+0% {
+top: -450px;
+left: 204px;
+}
+25% {
+top: -272px;
+left: 187px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -94px;
+left: 201px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 84px;
+left: 195px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 228px;
+transform: rotateZ(360deg);
+}
+}
+.littlebox9 { 
+top: -450px;
+left: 150px;
+animation-name: movelove9;
+animation-duration: 12s;
+animation-delay: 1s;
+}
+@keyframes movelove9 {
+0% {
+top: -450px;
+left: 150px;
+}
+25% {
+top: -240px;
+left: 187px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -80px;
+left: 201px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 80px;
+left: 195px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 228px;
+transform: rotateZ(360deg);
+}
+}
+.littlebox10 {
+top: -430px;
+left: 310px;
+animation-name: movelove10;
+animation-duration: 10s;
+animation-delay: 0s;
+}
+@keyframes movelove10 {
+0% {
+top: -450px;
+left: 310px;
+}
+25% {
+top: -247px;
+left: 289px;
+transform: rotateZ(90deg);
+}
+50% {
+top: -104px;
+left: 293px;
+transform: rotateZ(180deg);
+}
+75% {
+top: 59px;
+left: 265px;
+transform: rotateZ(270deg);
+}
+100% {
+top: 220px;
+left: 243px;
+transform: rotateZ(360deg);
+}
+}
+.textbox {
+width: 100%;
+height: 100px;
+text-align: center;
+position: relative;
+top: -100px;
+left: 0px;
+}
+/*******下面的文字********/
+.wu,.you1,.san,.hao,.qi1,.qi2,.qi3,.yi,.er,.san1,.ai1,.ai2,.ai3,.ni1,.ni2,.ni3 {
+opacity: 0;
+filter: blur(1px);
+animation-name: under-text;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+@keyframes under-text {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+.wu {
+animation-delay: 15s;
+}
+.you1 {
+animation-delay: 15.5s;
+}
+.san {
+animation-delay: 16s;
+}
+.hao {
+animation-delay: 16.5s;
+}
+.qi1 {
+animation-delay: 17s;
+}
+.yi {
+animation-delay: 17.5s;
+}
+.ai1 {
+animation-delay: 18s;
+}
+.ni1 {
+animation-delay: 18.5s;
+}
+.qi2 {
+animation-delay: 19s;
+}
+.er {
+animation-delay: 19.5s;
+}
+.ai2 {
+animation-delay: 20s;
+}
+.ni2 {
+animation-delay: 20.5s;
+}
+.qi3 {
+animation-delay: 21s;
+}
+.san1 {
+animation-delay: 21.5s;
+}
+.ai3 {
+animation-delay: 22s;
+}
+.ni3 {
+animation-delay: 22.5s;
+}
+
+.wu,.you1,.san,.hao {
+font-size: 25px;
+font-weight: bold;
+}
+.qiyi,.qier,.qisan {
+font-size: 20px;
+font-weight: bold;
+}
+.wu {
+color: RGB(0, 255, 255,0.53);
+text-shadow: 0 0 10px RGB(0, 255, 255,0.53),
+0 0 6px RGB(0, 255, 255,0.53);
+}
+.you1 {
+color: RGB(51, 181, 229,0.8);
+text-shadow: 0 0 10px RGB(51, 181, 229,0.8),
+0 0 6px RGB(51, 181, 229,0.8);
+}
+.san,.er {
+color: RGB(128, 0, 255,0.76);
+text-shadow: 0 0 10px RGB(128, 0, 255,0.76),
+0 0 6px RGB(128, 0, 255,0.76);
+}
+.hao,.san1 {
+color: RGB(152, 251, 152,0.89);
+text-shadow: 0 0 10px RGB(152, 251, 152,0.89),
+0 0 6px RGB(152, 251, 152,0.89);
+}
+.qi1,.ai2,.ni3 {
+color: RGB(255, 192, 203,0.89);
+text-shadow: 0 0 10px RGB(255, 192, 203,0.89),
+0 0 6px RGB(255, 192, 203,0.89);
+}
+.yi,.qi2 {
+color: RGB(80, 214, 245,0.9);
+text-shadow: 0 0 10px RGB(80, 214, 245,0.9),
+0 0 6px RGB(80, 214, 245,0.9);
+}
+.ai1,.ni2 {
+color: RGB(179, 153, 255,0.9);
+text-shadow: 0 0 10px RGB(179, 153, 255,0.9),
+0 0 6px RGB(179, 153, 255,0.9);
+}
+.ni1,.qi3 {
+color: RGB(154, 205, 50,0.8);
+text-shadow: 0 0 10px RGB(154, 205, 50,0.8),
+0 0 6px RGB(154, 205, 50,0.8);
+}
+.ai3 {
+color: RGB(245, 21, 228);
+text-shadow: 0 0 10px RGB(245, 21, 228),
+0 0 6px RGB(245, 21, 228);
+}
+/**********流星************/
+.morelittlebox {
+position: relative;
+top: -100px;
+}
+.movestar1,.movestar2,.movestar3 {
+width: 1px;
+height: 30px;
+background-color: RGB(0, 167, 254);
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+animation-duration: 4s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+} 
+.movestar1 {
+position: absolute;
+top: -485px;
+left: 330px;
+transform: rotateZ(45deg);
+animation-name: movestar1;
+animation-delay: 14.3s;
+}
+@keyframes movestar1 {
+from {
+top: -485px;
+left: 330px;
+}
+to {
+top: -20px;
+left: 0;
+}
+}
+.movestar2 {
+position: absolute;
+top: -483px;
+left: 210px;
+transform: rotateZ(45deg);
+animation-name: movestar2;
+animation-delay: 14.8s;
+}
+@keyframes movestar2 {
+from {
+top: -483px;
+left: 210px;
+}
+to {
+top: -190px;
+left: 0;
+}
+}
+.movestarmark {
+width: 3px;
+height: 32px;
+position: absolute;
+top: -306px;
+left: 304px;
+transform: rotateZ(45deg);
+z-index: -100;
+}
+.movestar3 {
+position: absolute;
+top: -306px;
+left: 306px;
+transform: rotateZ(45deg);
+z-index: -101;
+animation-name: movestar3;
+animation-delay: 15.5s;
+}
+@keyframes movestar3 {
+from {
+top: -306px;
+left: 306px;
+}
+to {
+top: 30px;
+left: 0;
+}
+}
+</style>
+</head>
+<body>
+<div class="box">
+ <div class="love">爱</div>
+ <div class="you">你</div>
+ <div class="mark"></div>
+ <div class="disc1"></div>
+ <div class="disc2"></div>
+ <div class="disc3"></div>
+ <div class="disc4"></div>
+ <div class="disc5"></div>
+ <div class="disc6"></div>
+ <div class="disc7"></div>
+ <div class="disc8"></div>
+ <div class="disc9"></div>
+ <div class="disc10"></div>
+ <div class="disc11"></div>
+ <div class="disc12"></div>
+ <div class="disc13"></div>
+ <div class="disc14"></div>
+ <div class="disc15"></div>
+ <div class="disc16"></div>
+ <div class="disc17"></div>
+ <div class="disc18"></div>
+ <div class="disc19"></div>
+ <div class="disc20"></div>
+ <div class="disc21"></div>
+ <div class="disc22"></div>
+ <div class="disc23"></div>
+ <div class="disc24"></div>
+ <div class="disc25"></div>
+ <div class="disc26"></div>
+ <div class="disc27"></div>
+ <div class="disc28"></div>
+ <div class="disc29"></div>
+ <div class="disc30"></div>
+ <div class="disc31"></div>
+ <div class="disc32"></div>
+ <div class="disc33"></div>
+ <div class="disc34"></div>
+ <div class="disc35"></div>
+</div>
+<div class="littlebox">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div>
+</div> 
+<div class="littlebox1">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox2">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox3">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox4">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox5">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox6">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox7">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox8">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox9">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="littlebox10">
+ <div class="moveloveleft"></div> 
+ <div class="moveloveright"></div> 
+ <div class="movelovesquare"></div> 
+</div>
+<div class="textbox">
+ <div class="text1">
+ <sapn class="wu">吾</sapn>
+ <span class="you1">有</span>
+ <span class="san">三</span>
+ <span class="hao">好</sapn>
+ </div>
+ <div class="qiyi">
+ <span class="qi1">其</span>
+ <span class="yi">一</span>
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ <span class="ai1">爱</span>
+ <span class="ni1">你</span>
+ </div>
+ <div class="qier">
+ <span class="qi2">其</span>
+ <span class="er">二</span>
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ <span class="ai2">爱</span>
+ <span class="ni2">你</span>
+</div>
+ <div class="qisan">
+ <span class="qi3">其</span>
+ <span class="san1">三</span>
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ <span class="ai3">爱</span>
+ <span class="ni3">你</span>
+</div>
+</div>
+<div class="morelittlebox">
+ <div class="movestar1"></div>
+ <div class="movestar2"></div>
+ <div class="movestarmark"></div>
+ <div class="movestar3"></div>
+</div>
+</body>
+</html>
